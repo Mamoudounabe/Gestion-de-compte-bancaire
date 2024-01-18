@@ -5,7 +5,7 @@
 #include <windows.h>//le temps.
 #include<time.h>// permet la temporisation du programme
 
-
+int ident(char *x, int n);
 //pour le temps
  void pause (int seconds)
       {
@@ -53,8 +53,8 @@ printf("%d-%d-%d %d:%d:%d ",t.wDay,t.wMonth,t.wYear,t.wHour,t.wMinute,t.wSecond)
          for(space=0;space<20;space++) printf(" ");pause(1);
          printf("||||||    |||||||||||||||       ||||   ||||   \n");pause(1);
          printf("\n\n\n                      INSTITUT     SUPERIEUR    DU GENIE     APPLIQUE\n\n\n\n");pause(3);
-         printf("                           _______________°°°°°________________             \n");pause(1);
-         printf("                           _______________°°°°°________________            \n\n\n");pause(1);
+         printf("                           _______________Â°Â°Â°Â°Â°________________             \n");pause(1);
+         printf("                           _______________Â°Â°Â°Â°Â°________________            \n\n\n");pause(1);
          printf("                                    PROJET D'ALGORITHME :\n\n");pause(3);
          printf("                       PROGRAMME SIMULANT LA GESTION DES COMPTES BANCAIRES  \n");pause(3);
          printf("                                   ____________________            \n\n");pause(1);
@@ -140,7 +140,7 @@ double som;
 void Retrait(identifiant *a)
 {
 int	essai=3;
- double montant;//som a retiré
+ double montant;//som a retirÃ©
 	int ten=3;//tententive pour le recu
 int option,recu,e=3;
 
@@ -183,7 +183,7 @@ int option,recu,e=3;
 						printf("Entrez le montant:\n");
 						 scanf("%lf",&montant);
 						if(e!=3)
-						printf("Entrez un montant multiple de 20:\n");//on doit forcer l'utilisqateur à suivre les consignes donnés
+						printf("Entrez un montant multiple de 20:\n");//on doit forcer l'utilisqateur Ã  suivre les consignes donnÃ©s
 						e--;
 					  }while(((int) montant)%20!=0 && e>0);
 					   break;
@@ -218,7 +218,7 @@ int option,recu,e=3;
                        printf("Prenom : %s \n", a->prenom) ;
                        printf("Montant retire : %lf\n Solde disponible : %lf \n ",montant,a->sold) ;
                        printf("Date&Heure : ");
-                       void main1(void);// qui gère l'heure
+                       void main1(void);// qui gÃ¨re l'heure
                        main1();  printf("\n_________________________________________________\n");
                         }
 					      printf("\n");
@@ -252,7 +252,7 @@ void Virement(identifiant *a,identifiant *b,int n)
 {
 	if(strcmp(b[i].compte,compte)==0 && strcmp(a->compte,compte)!=0)// on parcourt tous les mot_de_pass.//a->compte!=compte pour qu'on vire pas dans son compe.
 	{
-	   client_actuel=i; // avec i on a accès à toutes ces info...
+	   client_actuel=i; // avec i on a accÃ¨s Ã  toutes ces info...
 	   correct=1;
 	}
 }
@@ -273,7 +273,7 @@ if(correct)
 }
  }
 
- // fonction qui sert à faire la modification desirée.
+ // fonction qui sert Ã  faire la modification desirÃ©e.
  void modifier(identifiant *a)
 {
 	int option;
@@ -373,7 +373,7 @@ printf("\n\t\t\t     /______________________________________/   \n\n\n");
 {
 	if(strcmp(a[i].password,mot_de_pass)==0)// on parcourt tous les mot_de_pass.
 	{
-	   client_actuel=i; // avec i on a accès à toutes ces info...
+	   client_actuel=i; // avec i on a accÃ¨s Ã  toutes ces info...
 	   correct=1;
 	}
 }
@@ -414,7 +414,7 @@ printf("\n\t\t\t     /______________________________________/   \n\n\n");
 {
 	if(strcmp(a[i].password,mot_de_pass)==0)// on parcourt tous les mot_de_pass.
 	{
-	   client_actuel=i; // avec i on a accès à toutes ces info...
+	   client_actuel=i; // avec i on a accÃ¨s Ã  toutes ces info...
 	   correct=1;
 	}
 }
@@ -453,7 +453,7 @@ printf("\n\t\t\t     /______________________________________/   \n\n\n");
             break;
    case 2: Retrait(&a[client_actuel]);
             break;
-   case	3: Virement(&a[client_actuel],a,n);// client,a tous les comptes trouvant dans notre base donnée et n nombre de clients
+   case	3: Virement(&a[client_actuel],a,n);// client,a tous les comptes trouvant dans notre base donnÃ©e et n nombre de clients
            break;
    case 4: 	consultationsold(&a[client_actuel]);
             break;
@@ -491,7 +491,7 @@ identifiant client[100];
 int nbrclient=0; //nbr de clients.
 int choix,essaie=3;
 //int k=1;//pour repeter l'operation.
-  char num_ident[20]={"0000000009"};//numero de compte initialisé.
+  char num_ident[20]={"0000000009"};//numero de compte initialisÃ©.
 	page_accueil ();
 
 	do{
@@ -518,7 +518,7 @@ system("cls");
 	{
 
 case 1:  Nouveau(&client[nbrclient],num_ident);
-	    nbrclient++;//chaque fois qu'on crée un compte on incrémente le nombre de clients.
+	    nbrclient++;//chaque fois qu'on crÃ©e un compte on incrÃ©mente le nombre de clients.
 	    break;
 case 2: Existant(client,nbrclient);
          break;
