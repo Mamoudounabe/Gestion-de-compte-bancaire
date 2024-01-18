@@ -62,8 +62,6 @@ printf("%d-%d-%d %d:%d:%d ",t.wDay,t.wMonth,t.wYear,t.wHour,t.wMinute,t.wSecond)
          printf("                                    - Avril 2020\n\n\n");pause(3);
          printf(" CONCEPTION :\n\n");pause(1);
          printf(" NABE MAMOUDOU\n");pause(2);
-         printf("EL OUEDGHIRI INTISSAR\n");pause(2);
-        printf("BOUHMALA SALIM\n");pause(2);
          printf("              \n");pause(2);
          printf("              \n\n");pause(2);
          printf("                                                          SUPERVISION : \n\n");pause(1);
