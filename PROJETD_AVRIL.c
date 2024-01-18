@@ -5,6 +5,7 @@
 #include <windows.h>//le temps.
 #include<time.h>// permet la temporisation du programme
 
+// declaration de int
 int ident(char *x, int n);
 //pour le temps
  void pause (int seconds)
